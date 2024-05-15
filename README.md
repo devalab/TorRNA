@@ -9,4 +9,6 @@ The script `slurm_setup_env.sh` contains the commands to set up a minimal Anacon
 source slurm_setup_env.sh
 ```
 
+### Jupyter Notebooks
 
+All the results in the manuscript were generated using the `.ipynb` files provided in this repository.

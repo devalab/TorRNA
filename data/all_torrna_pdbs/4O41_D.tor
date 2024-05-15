@@ -1,0 +1,88 @@
+****************************************************************************
+Main chain and chi torsion angles: 
+
+Note: alpha:   O3'(i-1)-P-O5'-C5'
+      beta:    P-O5'-C5'-C4'
+      gamma:   O5'-C5'-C4'-C3'
+      delta:   C5'-C4'-C3'-O3'
+      epsilon: C4'-C3'-O3'-P(i+1)
+      zeta:    C3'-O3'-P(i+1)-O5'(i+1)
+
+      chi for pyrimidines(Y): O4'-C1'-N1-C2
+          chi for purines(R): O4'-C1'-N9-C4
+
+          chi in [165, -45(315)] for anti conformation
+                 chi in [45, 95] for syn conformation
+
+          e-z: epsilon - zeta
+              BI:  e-z = [-160, +20]
+              BII: e-z = [+20, +200]
+
+              base      chi A/S     alpha    beta   gamma   delta  epsilon   zeta     e-z BI/BII
+   1 D:.402_:[..G]G  -171.7 anti     ---    168.6    54.0    83.4  -153.7   -72.0   -81.7  BI
+   2 D:.403_:[..A]A  -157.1 anti    -58.5   179.7    43.0    82.1  -152.0   -71.3   -80.7  BI
+   3 D:.404_:[..G]G  -166.5 anti    -69.9   168.6    57.7    75.6  -148.7   -71.2   -77.5  BI
+   4 D:.405_:[..C]C  -165.0 anti    -61.8   168.1    56.4    76.7  -147.8   -66.5   -81.3  BI
+   5 D:.406_:[URU]u  -161.5 anti    -67.1   174.2    57.2    ---     ---     ---     ---   ---
+   6 D:.408_:[..C]C  -164.6 anti     ---    174.0    50.8    80.3  -139.1   -65.0   -74.1  BI
+   7 D:.409_:[..G]G  -168.2 anti    -68.1   175.1    51.3    78.8  -148.6   -69.1   -79.5  BI
+   8 D:.410_:[..G]G  -168.7 anti    -64.9   175.7    52.6    76.4  -143.3   -82.8   -60.6  BI
+   9 D:.411_:[..C]C  -161.5 anti    -56.4   166.4    49.7    82.6  -156.2   -67.3   -88.9  BI
+  10 D:.412_:[..U]U  -163.5 anti    -70.5   178.5    57.0    83.6  -148.5   -72.3   -76.2  BI
+  11 D:.413_:[..C]C  -157.5 anti    -64.3   169.4    53.0    73.9    ---     ---     ---   ---
+****************************************************************************
+Pseudo (virtual) eta/theta torsion angles:
+
+Note: eta:    C4'(i-1)-P(i)-C4'(i)-P(i+1)
+      theta:  P(i)-C4'(i)-P(i+1)-C4'(i+1)
+
+      eta':   C1'(i-1)-P(i)-C1'(i)-P(i+1)
+      theta': P(i)-C1'(i)-P(i+1)-C1'(i+1)
+
+      eta":   Borg(i-1)-P(i)-Borg(i)-P(i+1)
+      theta": P(i)-Borg(i)-P(i+1)-Borg(i+1)
+
+              base      eta   theta    eta'  theta'    eta"  theta"
+   1 D:.402_:[..G]G    ---   -143.9    ---   -143.4    ---   -126.3
+   2 D:.403_:[..A]A   170.7  -143.7  -177.9  -142.4  -145.9  -115.6
+   3 D:.404_:[..G]G   164.9  -144.7   179.7  -143.7  -136.3  -116.2
+   4 D:.405_:[..C]C   170.5  -139.5  -174.8  -138.7  -130.1  -103.5
+   5 D:.406_:[URU]u    ---     ---     ---     ---     ---     --- 
+   6 D:.408_:[..C]C    ---   -128.5    ---   -125.7    ---    -79.8
+   7 D:.409_:[..G]G   160.6  -142.3  -179.5  -138.6  -112.5  -102.3
+   8 D:.410_:[..G]G   171.4  -147.8  -174.8  -144.3  -123.4  -118.3
+   9 D:.411_:[..C]C   168.2  -140.8  -178.0  -141.2  -137.4  -115.9
+  10 D:.412_:[..U]U   170.3  -140.6  -174.5  -141.3  -132.4  -118.2
+  11 D:.413_:[..C]C    ---     ---     ---     ---     ---     --- 
+****************************************************************************
+Sugar conformational parameters: 
+
+Note: v0: C4'-O4'-C1'-C2'
+      v1: O4'-C1'-C2'-C3'
+      v2: C1'-C2'-C3'-C4'
+      v3: C2'-C3'-C4'-O4'
+      v4: C3'-C4'-O4'-C1'
+
+      tm: the amplitude of pucker
+      P:  the phase angle of pseudorotation
+
+    ssZp: single-stranded Zp, defined as the z-coordinate of the 3'
+            phosphorus atom (P) expressed in the standard reference
+            frame of preceding base; the value is POSITIVE when P lies
+            on the +z-axis side (base in anti conformation); NEGATIVE
+            if P is on the -z-axis side (base in syn conformation)
+      Dp: perpendicular distance of the 3' P atom to the glycosydic bond
+            [as per the MolProbity paper of Richardson et al. (2010)]
+
+              base       v0      v1      v2      v3      v4     tm       P    Puckering    ssZp     Dp
+   1 D:.402_:[..G]G     9.8   -32.1    40.8   -37.0    17.2    41.0     5.6    C3'-endo    4.61    4.63
+   2 D:.403_:[..A]A     9.7   -33.3    43.2   -38.7    18.5    43.5     6.1    C3'-endo    4.40    4.68
+   3 D:.404_:[..G]G     5.7   -32.0    44.4   -43.2    23.3    45.4    11.9    C3'-endo    4.62    4.74
+   4 D:.405_:[..C]C     3.3   -28.4    41.9   -41.2    23.8    43.3    14.5    C3'-endo    4.53    4.69
+   5 D:.406_:[URU]u     1.7   -27.0    39.7   -40.0    24.2    41.3    16.3    C3'-endo    ---     --- 
+   6 D:.408_:[..C]C     5.5   -28.6    39.8   -37.6    20.3    40.5    11.0    C3'-endo    4.54    4.72
+   7 D:.409_:[..G]G     4.8   -28.8    40.5   -39.1    21.8    41.4    12.4    C3'-endo    4.67    4.76
+   8 D:.410_:[..G]G     7.1   -32.6    44.1   -41.5    21.7    44.8     9.8    C3'-endo    4.66    4.75
+   9 D:.411_:[..C]C     5.6   -28.9    40.4   -38.2    20.3    41.1    10.9    C3'-endo    4.45    4.58
+  10 D:.412_:[..U]U    -0.6   -23.5    38.1   -39.6    24.8    40.4    19.5    C3'-endo    4.35    4.50
+  11 D:.413_:[..C]C    -0.9   -27.4    42.9   -45.7    29.3    45.7    20.1    C3'-endo    ---     --- 
